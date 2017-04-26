@@ -11,6 +11,12 @@ import com.test.springmvc.service.UserService;
 @Controller
 @RequestMapping("")
 public class CatchAll {
+	@RequestMapping("*")
+	public String catchErr() {
+		System.out.println("index");
+		return "404";
+	}
+	
 	
 	@RequestMapping("/index")
 	public String hello() {

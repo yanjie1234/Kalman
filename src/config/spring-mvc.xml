@@ -37,6 +37,9 @@
 			<value>1</value>
 		</property>
 	</bean>
+	<bean id="exceptionResolver" class="com.test.springmvc.hander.ExceptionHandler">
+	
+	</bean>
 	<!-- 避免IE执行AJAX时,返回JSON出现下载文件 -->
 	<bean
 		id="mappingJacksonHttpMessageConverter"
